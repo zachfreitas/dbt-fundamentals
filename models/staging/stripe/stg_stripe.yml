@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: Staged payments data from our jaffle shop app.
+    columns: 
+      - name: order_id
+        description: The primary key for customers.
+        tests:
+          - unique
+          - not_null
